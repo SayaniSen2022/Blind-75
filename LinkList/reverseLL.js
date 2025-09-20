@@ -1,4 +1,4 @@
-/* Given the beginning of a singly linked list head, reverse the list, and return the new beginning of the list. */
+/* Leet206: Given the beginning of a singly linked list head, reverse the list, and return the new beginning of the list. */
 
 let head = [0, 1, 2, 3];
 
@@ -8,8 +8,8 @@ let head = [0, 1, 2, 3];
  */
 
  class ListNode {
-    constructor(val = 0, next = null) {
-       this.val = val;
+    constructor(val = 0, next = null){
+        this.val = val;
         this.next = next;
     }
 }
@@ -17,7 +17,6 @@ let head = [0, 1, 2, 3];
 const reverseList = (head) => {
     let curr = head;
     let prev = null;
-
     while(curr){
         let temp = curr.next;
         curr.next = prev;
